@@ -5,63 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wohnungsanzeige / Оголошення про оренду квартири</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .box {
-            width: 45%;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-        @media (max-width: 768px) {
-            .box {
-                width: 100%;
-            }
-        }
-        h1 {
-            text-align: center;
-        }
-        .photos-map {
-            text-align: center;
-        }
-        .photos-section {
-            margin: 20px 0;
-        }
-        .photos-section h3 {
-            margin-top: 0;
-        }
-        .photos-section img {
-            height: 200px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            cursor: pointer;
-            max-width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .contact-section {
-            text-align: center;
-            margin: 20px 0;
-        }
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            border: 0;
-            border-radius: 10px;
-        }
-    </style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 20px;
+		}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.box {
+			width: 45%;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		@media (max-width: 768px) {
+			.box {
+				width: 100%;
+			}
+		}
+		h1 {
+			text-align: center;
+		}
+		.photos-map {
+			text-align: center;
+		}
+		.photos-section {
+			margin: 20px 0;
+		}
+		.photos-section h3 {
+			margin-top: 0;
+		}
+		.photos-section img {
+			height: auto; /* Ensures images keep their aspect ratio */
+			width: 100%; /* Makes images fill their container */
+			max-width: 100%; /* Ensures images don't exceed their container width */
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			cursor: pointer;
+			display: block;
+			margin: 10px auto; /* Centers images horizontally */
+		}
+		.contact-section {
+			text-align: center;
+			margin: 20px 0;
+		}
+		iframe {
+			width: 100%;
+			max-width: 600px;
+			border: 0;
+			border-radius: 10px;
+		}
+	</style>
 </head>
 <body>
     <h1>Wohnungsanzeige / Оголошення про оренду квартири</h1>
@@ -129,61 +128,61 @@
         <h2>Fotos und Karte / Фото та карта</h2>
         <div class="photos-section">
             <h3>Wohnzimmer</h3>
-            <a href="Wohnzimmer1.jpg" target="_blank"><img src="Wohnzimmer1.jpg" alt="Wohnzimmer Bild 1"></a>
-            <a href="Wohnzimmer2.jpg" target="_blank"><img src="Wohnzimmer2.jpg" alt="Wohnzimmer Bild 2"></a>
-            <a href="Wohnzimmer3.jpg" target="_blank"><img src="Wohnzimmer3.jpg" alt="Wohnzimmer Bild 3"></a>
-            <a href="Wohnzimmer4.jpg" target="_blank"><img src="Wohnzimmer4.jpg" alt="Wohnzimmer Bild 4"></a>
-            <a href="Wohnzimmer5.jpg" target="_blank"><img src="Wohnzimmer5.jpg" alt="Wohnzimmer Bild 5"></a>
+            <a href="Wohnzimmer1.jpg" target="_blank"><img loading="lazy" src="Wohnzimmer1.jpg" alt="Wohnzimmer Bild 1"></a>
+            <a href="Wohnzimmer2.jpg" target="_blank"><img loading="lazy" src="Wohnzimmer2.jpg" alt="Wohnzimmer Bild 2"></a>
+            <a href="Wohnzimmer3.jpg" target="_blank"><img loading="lazy" src="Wohnzimmer3.jpg" alt="Wohnzimmer Bild 3"></a>
+            <a href="Wohnzimmer4.jpg" target="_blank"><img loading="lazy" src="Wohnzimmer4.jpg" alt="Wohnzimmer Bild 4"></a>
+            <a href="Wohnzimmer5.jpg" target="_blank"><img loading="lazy" src="Wohnzimmer5.jpg" alt="Wohnzimmer Bild 5"></a>
         </div>
         <div class="photos-section">
             <h3>Bad</h3>
-            <a href="Bad1.jpg" target="_blank"><img src="Bad1.jpg" alt="Bad Bild 1"></a>
-            <a href="Bad2.jpg" target="_blank"><img src="Bad2.jpg" alt="Bad Bild 2"></a>
-            <a href="Bad3.jpg" target="_blank"><img src="Bad3.jpg" alt="Bad Bild 3"></a>
+            <a href="Bad1.jpg" target="_blank"><img loading="lazy" src="Bad1.jpg" alt="Bad Bild 1"></a>
+            <a href="Bad2.jpg" target="_blank"><img loading="lazy" src="Bad2.jpg" alt="Bad Bild 2"></a>
+            <a href="Bad3.jpg" target="_blank"><img loading="lazy" src="Bad3.jpg" alt="Bad Bild 3"></a>
         </div>
         <div class="photos-section">
             <h3>Diele</h3>
-            <a href="Diele1.jpg" target="_blank"><img src="Diele1.jpg" alt="Diele Bild 1"></a>
-            <a href="Diele2.jpg" target="_blank"><img src="Diele2.jpg" alt="Diele Bild 2"></a>
-            <a href="Diele3.jpg" target="_blank"><img src="Diele3.jpg" alt="Diele Bild 3"></a>
+            <a href="Diele1.jpg" target="_blank"><img loading="lazy" src="Diele1.jpg" alt="Diele Bild 1"></a>
+            <a href="Diele2.jpg" target="_blank"><img loading="lazy" src="Diele2.jpg" alt="Diele Bild 2"></a>
+            <a href="Diele3.jpg" target="_blank"><img loading="lazy" src="Diele3.jpg" alt="Diele Bild 3"></a>
         </div>
         <div class="photos-section">
             <h3>Küche</h3>
-            <a href="Küche1.jpg" target="_blank"><img src="Küche1.jpg" alt="Küche Bild 1"></a>
-            <a href="Küche2.jpg" target="_blank"><img src="Küche2.jpg" alt="Küche Bild 2"></a>
+            <a href="Küche1.JPG" target="_blank"><img loading="lazy" src="Küche1.JPG" alt="Küche Bild 1"></a>
+            <a href="Küche2.JPG" target="_blank"><img loading="lazy" src="Küche2.JPG" alt="Küche Bild 2"></a>
         </div>
         <div class="photos-section">
             <h3>Schlafzimmer</h3>
-            <a href="Schlafzimmer1.jpg" target="_blank"><img src="Schlafzimmer1.jpg" alt="Schlafzimmer Bild 1"></a>
-            <a href="Schlafzimmer2.jpg" target="_blank"><img src="Schlafzimmer2.jpg" alt="Schlafzimmer Bild 2"></a>
-            <a href="Schlafzimmer3.jpg" target="_blank"><img src="Schlafzimmer3.jpg" alt="Schlafzimmer Bild 3"></a>
+            <a href="Schlafzimmer1.jpg" target="_blank"><img loading="lazy" src="Schlafzimmer1.jpg" alt="Schlafzimmer Bild 1"></a>
+            <a href="Schlafzimmer2.jpg" target="_blank"><img loading="lazy" src="Schlafzimmer2.jpg" alt="Schlafzimmer Bild 2"></a>
+            <a href="Schlafzimmer3.jpg" target="_blank"><img loading="lazy" src="Schlafzimmer3.jpg" alt="Schlafzimmer Bild 3"></a>
         </div>
         <div class="photos-section">
             <h3>Kinderzimmer</h3>
-            <a href="Kinderzimmer1.jpg" target="_blank"><img src="Kinderzimmer1.jpg" alt="Kinderzimmer Bild 1"></a>
-            <a href="Kinderzimmer2.jpg" target="_blank"><img src="Kinderzimmer2.jpg" alt="Kinderzimmer Bild 2"></a>
+            <a href="Kinderzimmer1.jpg" target="_blank"><img loading="lazy" src="Kinderzimmer1.jpg" alt="Kinderzimmer Bild 1"></a>
+            <a href="Kinderzimmer2.jpg" target="_blank"><img loading="lazy" src="Kinderzimmer2.jpg" alt="Kinderzimmer Bild 2"></a>
         </div>
         <div class="photos-section">
             <h3>Garten</h3>
-            <a href="Garten1.jpg" target="_blank"><img src="Garten1.jpg" alt="Garten Bild 1"></a>
-            <a href="Garten2.jpg" target="_blank"><img src="Garten2.jpg" alt="Garten Bild 2"></a>
-            <a href="Gartenzauntor.jpg" target="_blank"><img src="Gartenzauntor.jpg" alt="Gartenzauntor Bild"></a>
+            <a href="Garten1.jpg" target="_blank"><img loading="lazy" src="Garten1.jpg" alt="Garten Bild 1"></a>
+            <a href="Garten2.jpg" target="_blank"><img loading="lazy" src="Garten2.jpg" alt="Garten Bild 2"></a>
+            <a href="Gartenzauntor.jpg" target="_blank"><img loading="lazy" src="Gartenzauntor.jpg" alt="Gartenzauntor Bild"></a>
         </div>
 		<div class="photos-section">
             <h3>Möbel zu verkaufen</h3>
-            <a href="Möbel%20zu%20verkaufen/Bettkasten (Ikea 902.646.90).jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Bettkasten (Ikea 902.646.90).jpg" alt="Bettkasten (Ikea 902.646.90)"></a>
-			<a href="Möbel%20zu%20verkaufen/Ikea Malm 904.036.05.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Ikea Malm 904.036.05.jpg" alt="Ikea Malm 904.036.05"></a>
-			<a href="Möbel%20zu%20verkaufen/Ikea Pax 592.860.91.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Ikea Pax 592.860.91.jpg" alt="Ikea Pax 592.860.91"></a>
-			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 1.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 1.jpg" alt="Ikea Sofa (503.411.48) 1"></a>
-			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 2.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 2.jpg" alt="Ikea Sofa (503.411.48) 2"></a>
-			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 3.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 3.jpg" alt="Ikea Sofa (503.411.48) 3"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 1.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 1.jpg" alt="Schrank Ikea Pax 1"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 2.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 2.jpg" alt="Schrank Ikea Pax 2"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 3.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 3.jpg" alt="Schrank Ikea Pax 3"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-1.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-1.jpg" alt="Schrank Ikea Pax 4-1"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-2.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-2.jpg" alt="Schrank Ikea Pax 4-2"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank1.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank1.jpg" alt="Schrank 1"></a>
-			<a href="Möbel%20zu%20verkaufen/Schrank2.jpg" target="_blank"><img src="Möbel%20zu%20verkaufen/Schrank2.jpg" alt="Schrank 2"></a> 
+            <a href="Möbel%20zu%20verkaufen/Bettkasten (Ikea 902.646.90).jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Bettkasten (Ikea 902.646.90).jpg" alt="Bettkasten (Ikea 902.646.90)"></a>
+			<a href="Möbel%20zu%20verkaufen/Ikea Malm 904.036.05.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Ikea Malm 904.036.05.jpg" alt="Ikea Malm 904.036.05"></a>
+			<a href="Möbel%20zu%20verkaufen/Ikea Pax 592.860.91.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Ikea Pax 592.860.91.jpg" alt="Ikea Pax 592.860.91"></a>
+			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 1.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 1.jpg" alt="Ikea Sofa (503.411.48) 1"></a>
+			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 2.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 2.jpg" alt="Ikea Sofa (503.411.48) 2"></a>
+			<a href="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 3.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Ikea Sofa (503.411.48) 3.jpg" alt="Ikea Sofa (503.411.48) 3"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 1.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 1.jpg" alt="Schrank Ikea Pax 1"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 2.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 2.jpg" alt="Schrank Ikea Pax 2"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 3.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 3.jpg" alt="Schrank Ikea Pax 3"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-1.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-1.jpg" alt="Schrank Ikea Pax 4-1"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-2.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank Ikea Pax 4-2.jpg" alt="Schrank Ikea Pax 4-2"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank1.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank1.jpg" alt="Schrank 1"></a>
+			<a href="Möbel%20zu%20verkaufen/Schrank2.jpg" target="_blank"><img loading="lazy" src="Möbel%20zu%20verkaufen/Schrank2.jpg" alt="Schrank 2"></a> 
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30008.00774112311!2d11.255893756404129!3d48.334419523099484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e8804752ebd43%3A0x87aee6df64688c35!2zODUyNTMg0JXRgNC00LLQtdCz!5e0!3m2!1suk!2sde!4v1720609818871!5m2!1suk!2sde" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
