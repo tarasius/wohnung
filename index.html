@@ -41,14 +41,21 @@
 			margin-top: 0;
 		}
 		.photos-section img {
-			height: auto; /* Ensures images keep their aspect ratio */
-			width: 15%; /* Makes images fill their container */
-			max-width: 100%; /* Ensures images don't exceed their container width */
+			height: auto;
+			max-width: 100%;
 			border: 1px solid #ccc;
 			border-radius: 10px;
 			cursor: pointer;
 			display: block;
-			margin: 10px auto; /* Centers images horizontally */
+			margin-bottom: 10px;
+		}
+		@media (min-width: 769px) {
+			.photos-section img {
+				max-width: 300px;
+				width: 100%;
+				display: inline-block;
+				margin: 0 10px 10px 0; /* Adjust margins for spacing between images */
+			}
 		}
 		.contact-section {
 			text-align: center;
@@ -61,6 +68,7 @@
 			border-radius: 10px;
 		}
 	</style>
+
 </head>
 <body>
     <h1>Wohnungsanzeige / Оголошення про оренду квартири</h1>
