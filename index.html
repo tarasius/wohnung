@@ -49,6 +49,14 @@
 			display: block;
 			margin-bottom: 10px;
 		}
+		@media (min-width: 769px) {
+			.photos-section img {
+				max-width: 300px;
+				width: 100%;
+				display: inline-block;
+				margin: 0 10px 10px 0; /* Adjust margins for spacing between images */
+			}
+		}
 		.contact-section {
 			text-align: center;
 			margin: 20px 0;
@@ -221,5 +229,21 @@
         <h2>Kontakt / Контакти</h2>
         <p><a href="https://t.me/werdweg">Telegram</a></p>
     </div>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var buttons = document.querySelectorAll('.collapsible-button');
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
